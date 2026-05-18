@@ -1,0 +1,90 @@
+/* styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800&auto=format&fit=crop");
+  background-size: cover;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.movie-card {
+  width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.movie-content {
+  padding: 16px;
+}
+
+.movie-content h2 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.movie-content p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.watchlist-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.watchlist-btn:hover {
+  background-color: #0056b3;
+}
+
+.watchlist-btn.added {
+  background-color: #28a745;
+}
+
+@media (max-width: 480px) {
+  .movie-card {
+    width: 100%;
+  }
+}
